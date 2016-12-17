@@ -275,7 +275,7 @@ canvas {
 html {
     font-size: 20px;
     box-sizing: border-box;
-    background: #23167a;
+    background: #6d21e8;
     overflow-x: hidden
 }
 
@@ -304,7 +304,7 @@ a {
 body {
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 300;
-    background: #23167a;
+    background: #6d21e8;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden
@@ -534,7 +534,7 @@ a {
 .section--hero {
     height: 550px;
     text-align: center;
-    background: #23167a
+    background: #6d21e8
 }
 
 .section--hero .wrap {
@@ -740,7 +740,7 @@ a {
 }
 
 .tabs--generator .tabs__content {
-    background: #23167a
+    background: #6d21e8
 }
 
 .tabs--assistant .tabs__content {
@@ -818,7 +818,7 @@ a {
     width: 400px;
     height: 100%;
     padding: 1rem;
-    background: #23167a;
+    background: #6d21e8;
     -ms-flex-negative: 0;
     flex-shrink: 0
 }
@@ -1033,7 +1033,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .footer {
-    background: #23167a;
+    background: #6d21e8;
     font-size: 1rem;
     padding: 1rem 0
 }
@@ -1114,7 +1114,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .chat__item--user .chat__bubble {
-    background: #23167a;
+    background: #6d21e8;
     border-top-right-radius: 0;
     margin-left: auto
 }
