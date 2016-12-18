@@ -1196,8 +1196,13 @@ ul {
     margin-top: 20px;
     margin-right: 30px;
 }
+.featured {
+    transition: all .3s ease-in-out;
+    margin-top: 20px;
+    margin-right: 30px;
+}
 
-.faded:hover {
+.featured:hover {
     opacity: 1;
     transform: scale(1.1);
 }
