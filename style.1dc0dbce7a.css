@@ -228,7 +228,7 @@ canvas {
 }
 
 .button--purple {
-    background: #614cdb
+    background: #4caf50
 }
 
 .button--purple:hover {
@@ -276,7 +276,7 @@ canvas {
 html {
     font-size: 20px;
     box-sizing: border-box;
-    background: #23167a;
+    background: #4caf50;
     overflow-x: hidden
 }
 
@@ -305,7 +305,7 @@ a {
 body {
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 300;
-    background: #23167a;
+    background: #4caf50;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden
@@ -546,7 +546,7 @@ a {
 }
 
 .section--cta {
-    background: #4231a9;
+    background: #009ddf;
     height: 250px;
     display: -ms-flexbox;
     display: flex
@@ -588,11 +588,11 @@ a {
 }
 
 .section--dark {
-    background: #4231a9
+    background: #009ddf
 }
 
 .section--light {
-    background: #614cdb
+    background: #3076cc;
 }
 
 .copy {
@@ -741,7 +741,7 @@ a {
 }
 
 .tabs--generator .tabs__content {
-    background: #23167a
+    background: #3076cc;
 }
 
 .tabs--assistant .tabs__content {
@@ -819,7 +819,7 @@ a {
     width: 400px;
     height: 100%;
     padding: 1rem;
-    background: #23167a;
+    background: #425ab1;
     -ms-flex-negative: 0;
     flex-shrink: 0
 }
@@ -1116,7 +1116,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .chat__item--user .chat__bubble {
-    background: #23167a;
+    background: #4caf50;
     border-top-right-radius: 0;
     margin-left: auto
 }
