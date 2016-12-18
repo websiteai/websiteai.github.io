@@ -1189,3 +1189,13 @@ ul {
     white-space: nowrap;
     width: 1px
 }
+
+.faded {
+    opacity: 0.6;
+    transition: all .3s ease-in-out;;
+}
+
+.faded:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
