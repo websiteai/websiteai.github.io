@@ -222,7 +222,7 @@
         o = function() {
             function t() {
                 var e = this;
-                n(this, t), this.canvas = document.querySelector(".js-animNLP"), this.container = this.canvas.parentNode, this.icons = ["/img/dots-location.e51f51b7d0.svg", "/img/dots-user.c47b140c89.svg", "/img/dots-building.3e744a31c2.svg"], this.colors = ["#CCC2FD", "#AEC2FD", "#FFFFFF"], this.stage = new createjs.Stage(this.canvas), this.points = null, this.positions = [], this.groups = new createjs.Container, this.dotrad = window.innerWidth < 600 ? 2.3 : 1.7, this.canvasProps = {
+                n(this, t), this.canvas = document.querySelector(".js-animNLP"), this.container = this.canvas.parentNode, this.icons = ["img/dots-location.e51f51b7d0.svg", "img/dots-user.c47b140c89.svg", "img/dots-building.3e744a31c2.svg"], this.colors = ["#CCC2FD", "#AEC2FD", "#FFFFFF"], this.stage = new createjs.Stage(this.canvas), this.points = null, this.positions = [], this.groups = new createjs.Container, this.dotrad = window.innerWidth < 600 ? 2.3 : 1.7, this.canvasProps = {
                     width: this.container.offsetWidth,
                     height: this.container.offsetWidth,
                     center: this.container.offsetWidth / 2
