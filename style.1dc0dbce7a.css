@@ -1192,7 +1192,9 @@ ul {
 
 .faded {
     opacity: 0.6;
-    transition: all .3s ease-in-out;;
+    transition: all .3s ease-in-out;
+    margin-top: 20px;
+    margin-right: 30px;
 }
 
 .faded:hover {
