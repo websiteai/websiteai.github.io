@@ -360,23 +360,7 @@
             })
         }, r = 0; r < t.length; r++) o(r)
     }()
-}, function(t, e) {
-    "use strict";
-    for (var i = !1, n = document.querySelectorAll(".js-toggleContact"), s = document.getElementById("contact"), a = 0; a < n.length; a++) n[a].addEventListener("click", function() {
-        i = !i, i ? document.body.classList.add("is-contact") : document.body.classList.remove("is-contact")
-    });
-    window.addEventListener("keyup", function(t) {
-        27 == t.keyCode && (i = !i, i ? document.body.classList.add("is-contact") : document.body.classList.remove("is-contact"))
-    }), s.addEventListener("submit", function(t) {
-        t.preventDefault();
-        var e = new XMLHttpRequest;
-        e.onreadystatechange = function() {
-            4 == this.readyState && 200 == this.status && (s.classList.add("is-success"), s.querySelector(".button").innerHTML = "Sent", console.log("Thank you! Contact form entry registered."), setTimeout(function() {
-                document.body.classList.remove("is-contact")
-            }, 5e3))
-        }, e.open("POST", s.getAttribute("action")), e.send(new FormData(s))
-    })
-}, function(t, e) {
+},  function(t, e) {
     "use strict";
 
     function i(t, e) {
