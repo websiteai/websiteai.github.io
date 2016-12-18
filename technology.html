@@ -22,7 +22,12 @@
     <div class="topbar">
         <div class="wrap">
             <h1 class="topbar__branding"><a href="https://websiteai.github.io/"><svg width="28" height="29" viewBox="0 0 28 29" xmlns="http://www.w3.org/2000/svg"><title>Logo</title><path d="M13.996 8.915c3.136 0 5.687 2.578 5.687 5.747 0 3.17-2.551 5.748-5.687 5.748-3.135 0-5.686-2.578-5.686-5.748 0-3.169 2.551-5.747 5.686-5.747m0-3.98c-5.314 0-9.622 4.355-9.622 9.727s4.308 9.727 9.622 9.727c5.315 0 9.623-4.355 9.623-9.727s-4.308-9.726-9.623-9.726zM0 26.14c0 1.465 1.175 2.653 2.624 2.653 1.45 0 2.625-1.188 2.625-2.653s-1.175-2.653-2.625-2.653C1.175 23.487 0 24.675 0 26.14zM22.744 3.167c0 1.465 1.175 2.653 2.625 2.653 1.449 0 2.624-1.188 2.624-2.653S26.818.514 25.369.514c-1.45 0-2.625 1.188-2.625 2.653z" fill="#FFF" fill-rule="evenodd"/></svg> SuperText</a></h1>
-            <button class="button js-toggleContact">Contact</button></div>
+            <nav class="nav">
+                <ul>
+                    <li class="nav__item"><a href="https://websiteai.github.io/">Products</a></li>
+                    <li class="nav__item is-active"><a href="technology.html">Technology</a></li>
+                </ul>
+            </nav><button class="button js-toggleContact">Contact</button></div>
     </div>
     <main class="content">
         <section class="section section--light">
@@ -53,7 +58,7 @@
     <div class="contact">
         <div class="contact__window">
             <h2 class="heading heading--content">Contact us</h2>
-            <form class="form form--contact" accept-charset="UTF-8" action="https://api.formbucket.com/f/buk_mMK5avG8CqhUO1ILD6N9eXtY" method="POST" id="contact">
+            <form class="form form--contact" accept-charset="UTF-8" action="https://api.formbucket.com/f/buk_mMK5avG8CqhUO1ILD6N9eXtY" method="POST" target="_blank" id="contact">
                 <fieldset class="input input--text"><input type="text" name="name" placeholder="Name" required><label class="input__label">Name</label></fieldset>
                 <fieldset class="input input--text"><input type="text" name="email" placeholder="Email" required><label class="input__label">Email</label></fieldset>
                 <fieldset class="input input--text"><input type="text" name="company" placeholder="Company"><label class="input__label">Company</label></fieldset>
@@ -64,13 +69,36 @@
             </form>
         </div>
     </div>
-    <footer class="footer">
-        <div class="wrap"><small class="copy copy--muted">Under25 Club &copy; 2016</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <footer style="padding-top: 120px;" class="footer">
+        <div class="brand-holder">
+            <img src="download.png" height="50"> <p>Supertext</p>
+        </div>
+        <div  class="footer-text" style="position: relative">
+            <p class=" copy copy--muted"> Find us on social media</p>
+        </div>
+       <!-- <div class="wrap"><small class="copy copy--muted">Under 25 club &copy; 2016</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;&nbsp;
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>&nbsp;&nbsp;
-            <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;
-          </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div style="text-align: center; margin-top: -10px">
+                <a href="https://www.facebook.com/supertextnow/" target="_blank">
+                    <i class="fa fa-facebook" style="font-size: 25px;" aria-hidden="true"></i>&nbsp;&nbsp;
+                </a>
+                <a href="https://medium.com/@Supertextnow" target="_blank">
+                    <i class="fa fa-medium" style="font-size: 25px;" aria-hidden="true"></i>&nbsp;&nbsp;
+                </a>
+                <a href="https://twitter.com/supertextnow" target="_blank">
+                    <i class="fa fa-twitter" style="font-size:25px;" aria-hidden="true"></i>&nbsp;&nbsp;
+                </a>
+                <a href="https://www.instagram.com/supertextnow/" target="_blank">
+                    <i class="fa fa-instagram" style="font-size: 25px;" aria-hidden="true"></i>&nbsp;&nbsp;
+                </a>
+            </div>
+        <hr class="putspace" size="1">
+        <div class="footer-end">
+            <a href="#" class="copy copy--muted endlink"> Privacy Policy</a> |
+            <a href="#" class="copy copy--muted endlink"> FAQ</a> |
+            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScWde29_2IeJDuZz8PZU87_stMhXvJWWY4aC6udCTzE8dt_Wg/viewform" class="copy copy--muted endlink"> Get in Touch</a>
+        </div>
     </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.4.2/mark.min.js"></script>
