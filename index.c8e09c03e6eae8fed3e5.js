@@ -31,14 +31,14 @@
         v = i(2),
         p = n(v);
     window.addEventListener("load", function(t) {
-            var e = document.querySelector(".js-dotField"),
-                i = document.querySelector(".js-dotFieldFooter");
-            console.log("Orbit.ai 👾👾👾👾👾 Bakken & Bæck 2016"), "/" == window.location.pathname ? (new a.default(e), new l.default) : (new f.default, new p.default), new a.default(i, 2.5, !0)
-        }),
+        var e = document.querySelector(".js-dotField"),
+            i = document.querySelector(".js-dotFieldFooter");
+        console.log("Orbit.ai 👾👾👾👾👾 Bakken & Bæck 2016"), "/" == window.location.pathname ? (new a.default(e), new l.default) : (new f.default, new p.default), new a.default(i, 2.5, !0)
+    }),
         function(t, e, i, n, s, a, o) {
             t.GoogleAnalyticsObject = s, t[s] = t[s] || function() {
-                (t[s].q = t[s].q || []).push(arguments)
-            }, t[s].l = 1 * new Date, a = e.createElement(i), o = e.getElementsByTagName(i)[0], a.async = 1, a.src = n, o.parentNode.insertBefore(a, o)
+                    (t[s].q = t[s].q || []).push(arguments)
+                }, t[s].l = 1 * new Date, a = e.createElement(i), o = e.getElementsByTagName(i)[0], a.async = 1, a.src = n, o.parentNode.insertBefore(a, o)
         }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-48579361-1", "auto"), ga("send", "pageview")
 }, function(t, e) {
     "use strict";
@@ -46,15 +46,15 @@
     function i(t) {
         return new Promise(function(e, i) {
             for (var n = [], s = function(i) {
-                    var s = new XMLHttpRequest,
-                        a = [];
-                    s.onreadystatechange = function() {
-                        if (4 == this.readyState && 200 == this.status) {
-                            for (var i = this.responseXML, s = i.getElementsByTagName("circle"), o = 0; o < s.length; o++) a.push(s[o]);
-                            n.push(a), n.length == t.length && e(n)
-                        }
-                    }, s.open("GET", t[i], !0), s.send()
-                }, a = 0; a < t.length; a++) s(a)
+                var s = new XMLHttpRequest,
+                    a = [];
+                s.onreadystatechange = function() {
+                    if (4 == this.readyState && 200 == this.status) {
+                        for (var i = this.responseXML, s = i.getElementsByTagName("circle"), o = 0; o < s.length; o++) a.push(s[o]);
+                        n.push(a), n.length == t.length && e(n)
+                    }
+                }, s.open("GET", t[i], !0), s.send()
+            }, a = 0; a < t.length; a++) s(a)
         })
     }
 
@@ -178,13 +178,13 @@
                 key: "animateList",
                 value: function() {
                     for (var t = this, e = new TimelineLite({
-                            onUpdate: function() {
-                                t.stage.update()
-                            },
-                            onComplete: function() {
-                                e.restart()
-                            }
-                        }), i = 0; i < this.listItems.length; i++) e.fromTo(this.listItems[i], .25, {
+                        onUpdate: function() {
+                            t.stage.update()
+                        },
+                        onComplete: function() {
+                            e.restart()
+                        }
+                    }), i = 0; i < this.listItems.length; i++) e.fromTo(this.listItems[i], .25, {
                         alpha: 0
                     }, {
                         alpha: 1
@@ -222,7 +222,7 @@
         o = function() {
             function t() {
                 var e = this;
-                n(this, t), this.canvas = document.querySelector(".js-animNLP"), this.container = this.canvas.parentNode, this.icons = ["/img/dots-location.e51f51b7d0.svg", "/img/dots-user.c47b140c89.svg", "/img/dots-building.3e744a31c2.svg"], this.colors = ["#CCC2FD", "#AEC2FD", "#FFFFFF"], this.stage = new createjs.Stage(this.canvas), this.points = null, this.positions = [], this.groups = new createjs.Container, this.dotrad = window.innerWidth < 600 ? 2.3 : 1.7, this.canvasProps = {
+                n(this, t), this.canvas = document.querySelector(".js-animNLP"), this.container = this.canvas.parentNode, this.icons = ["/img/dots-location.e51f51b7d0.svg", "/img/dots-user.c47b140c89.svg", "/img/dots-building.3e744a31c2.svg"], this.colors = ["#e0ff3d", "#e0ff3d", "#FFFFFF"], this.stage = new createjs.Stage(this.canvas), this.points = null, this.positions = [], this.groups = new createjs.Container, this.dotrad = window.innerWidth < 600 ? 2.3 : 1.7, this.canvasProps = {
                     width: this.container.offsetWidth,
                     height: this.container.offsetWidth,
                     center: this.container.offsetWidth / 2
@@ -267,13 +267,13 @@
                 key: "animate",
                 value: function() {
                     for (var t = this, e = new TimelineLite({
-                            onUpdate: function() {
-                                t.stage.update()
-                            },
-                            onComplete: function() {
-                                e.restart()
-                            }
-                        }), i = 0; i < this.groups.children.length; i++) {
+                        onUpdate: function() {
+                            t.stage.update()
+                        },
+                        onComplete: function() {
+                            e.restart()
+                        }
+                    }), i = 0; i < this.groups.children.length; i++) {
                         var n = this.groups.children[i],
                             s = 2 == i ? 10 : 0,
                             a = 2 == i ? 5 : 0;
@@ -306,59 +306,59 @@
     "use strict";
     document.querySelector(".chat") && ! function() {
         for (var t = document.querySelectorAll(".tabs--assistant .tabs__item"), e = document.querySelectorAll(".chat"), i = [], n = 0, s = (new Waypoint({
-                element: document.querySelector(".tabs--assistant"),
-                handler: function(t) {
-                    "down" == t && i[n].play(), "up" == t && i[n].pause()
-                },
-                offset: window.innerHeight - 300
-            }), function(t) {
-                var n = e[t].querySelectorAll(".chat__item"),
-                    s = new TimelineLite({
-                        paused: !0
-                    });
-                i.push(s);
-                for (var a = function(i) {
-                        var a = n[i],
-                            o = a.querySelector(".chat__bubble"),
-                            r = o.querySelector("p"),
-                            c = r.getBoundingClientRect(),
-                            l = a.parentNode.parentNode;
+            element: document.querySelector(".tabs--assistant"),
+            handler: function(t) {
+                "down" == t && i[n].play(), "up" == t && i[n].pause()
+            },
+            offset: window.innerHeight - 300
+        }), function(t) {
+            var n = e[t].querySelectorAll(".chat__item"),
+                s = new TimelineLite({
+                    paused: !0
+                });
+            i.push(s);
+            for (var a = function(i) {
+                var a = n[i],
+                    o = a.querySelector(".chat__bubble"),
+                    r = o.querySelector("p"),
+                    c = r.getBoundingClientRect(),
+                    l = a.parentNode.parentNode;
+                s.to(e[t], .75, {
+                    y: "-=82",
+                    onStart: function() {
+                        l.scrollTop = 0
+                    }
+                }, 4 * i),
+                    function(i, a) {
                         s.to(e[t], .75, {
-                                y: "-=82",
-                                onStart: function() {
-                                    l.scrollTop = 0
-                                }
-                            }, 4 * i),
-                            function(i, a) {
-                                s.to(e[t], .75, {
-                                    y: "-=" + (i.height - 50)
-                                }, 4 * a + 2), s.fromTo(o, .25, {
-                                    width: 70,
-                                    height: 50
-                                }, {
-                                    width: i.width,
-                                    height: i.height,
-                                    onStart: function() {
-                                        this.target.classList.add("is-sent")
-                                    },
-                                    onComplete: function() {
-                                        this.target.classList.add("is-current"), a == n.length - 1 && setTimeout(function() {
-                                            document.querySelector(".tabs--assistant").classList.add("is-complete"), l.scrollTop = l.scrollHeight
-                                        }, 300)
-                                    }
-                                }, 4 * a + 2)
-                            }(c, i)
-                    }, o = 0; o < n.length; o++) a(o)
-            }), a = 0; a < e.length; a++) s(a);
+                            y: "-=" + (i.height - 50)
+                        }, 4 * a + 2), s.fromTo(o, .25, {
+                            width: 70,
+                            height: 50
+                        }, {
+                            width: i.width,
+                            height: i.height,
+                            onStart: function() {
+                                this.target.classList.add("is-sent")
+                            },
+                            onComplete: function() {
+                                this.target.classList.add("is-current"), a == n.length - 1 && setTimeout(function() {
+                                    document.querySelector(".tabs--assistant").classList.add("is-complete"), l.scrollTop = l.scrollHeight
+                                }, 300)
+                            }
+                        }, 4 * a + 2)
+                    }(c, i)
+            }, o = 0; o < n.length; o++) a(o)
+        }), a = 0; a < e.length; a++) s(a);
         for (var o = function(e) {
-                t[e].addEventListener("click", function() {
-                    var t = (this.dataset.tab, document.querySelectorAll(".chat__bubble.is-current"));
-                    n = e;
-                    for (var s = 0; s < t.length; s++) t[s].classList.remove("is-current", "is-sent");
-                    for (var a = 0; a < i.length; a++) i[a].stop().seek(0);
-                    document.querySelector(".tabs--assistant").classList.remove("is-complete"), i[n].play()
-                })
-            }, r = 0; r < t.length; r++) o(r)
+            t[e].addEventListener("click", function() {
+                var t = (this.dataset.tab, document.querySelectorAll(".chat__bubble.is-current"));
+                n = e;
+                for (var s = 0; s < t.length; s++) t[s].classList.remove("is-current", "is-sent");
+                for (var a = 0; a < i.length; a++) i[a].stop().seek(0);
+                document.querySelector(".tabs--assistant").classList.remove("is-complete"), i[n].play()
+            })
+        }, r = 0; r < t.length; r++) o(r)
     }()
 }, function(t, e) {
     "use strict";
@@ -441,23 +441,23 @@
         i(this, t);
         for (var n = document.querySelector(".tabs--generator"), s = n.querySelectorAll(".data-strings__item span"), a = n.querySelectorAll(".data-copy"), o = [], r = !0, c = void 0, l = void 0, d = void 0, h = [], u = 0, f = 0; f < a.length; f++) o.push(new Mark(a[f]));
         for (var v = function(t) {
-                var e = s[t],
-                    i = e.dataset.highlight.split(", "),
-                    n = e.dataset.target;
-                e.addEventListener("mouseenter", function() {
-                    o[n].unmark(), o[n].mark(i, {
-                        separateWordSearch: !1
-                    }), r = !1
-                }), e.addEventListener("click", function() {
-                    o[n].unmark(), o[n].mark(i, {
-                        separateWordSearch: !1
-                    }), r = !1
-                }), e.addEventListener("mouseleave", function() {
-                    o[n].unmark(), o[d].mark(l, {
-                        separateWordSearch: !1
-                    }), r = !0
-                })
-            }, p = 0; p < s.length; p++) v(p);
+            var e = s[t],
+                i = e.dataset.highlight.split(", "),
+                n = e.dataset.target;
+            e.addEventListener("mouseenter", function() {
+                o[n].unmark(), o[n].mark(i, {
+                    separateWordSearch: !1
+                }), r = !1
+            }), e.addEventListener("click", function() {
+                o[n].unmark(), o[n].mark(i, {
+                    separateWordSearch: !1
+                }), r = !1
+            }), e.addEventListener("mouseleave", function() {
+                o[n].unmark(), o[d].mark(l, {
+                    separateWordSearch: !1
+                }), r = !0
+            })
+        }, p = 0; p < s.length; p++) v(p);
         e(), n && setInterval(function() {
             e()
         }, 3e3)
@@ -466,27 +466,27 @@
 }, function(t, e) {
     "use strict";
     for (var i = document.querySelectorAll(".js-scrollTo"), n = function(t) {
-            var e = i[t],
-                n = e.dataset.scroll,
-                s = parseInt(e.dataset.offset) || 0,
-                a = document.querySelector(".js-scrollTo-" + n).getBoundingClientRect().top + window.pageYOffset;
-            e.addEventListener("click", function() {
-                e.classList.contains("tabs__item") && window.innerWidth > 600 || TweenLite.to(window, 1.5, {
-                    scrollTo: a - s,
-                    ease: Power4.easeInOut
-                })
+        var e = i[t],
+            n = e.dataset.scroll,
+            s = parseInt(e.dataset.offset) || 0,
+            a = document.querySelector(".js-scrollTo-" + n).getBoundingClientRect().top + window.pageYOffset;
+        e.addEventListener("click", function() {
+            e.classList.contains("tabs__item") && window.innerWidth > 600 || TweenLite.to(window, 1.5, {
+                scrollTo: a - s,
+                ease: Power4.easeInOut
             })
-        }, s = 0; s < i.length; s++) n(s)
+        })
+    }, s = 0; s < i.length; s++) n(s)
 }, function(t, e) {
     "use strict";
     for (var i = document.querySelectorAll(".tabs__item"), n = function(t) {
-            var e = i[t].dataset.tab,
-                n = document.querySelector(".tab--" + e),
-                s = void 0;
-            i[t].addEventListener("click", function() {
-                s = document.querySelectorAll(".data-strings__item span");
-                for (var a = 0; a < s.length; a++) s[a].classList.remove("is-active");
-                i[t].parentNode.querySelector(".tabs__item.is-active").classList.remove("is-active"), n.parentNode.querySelector(".tab.is-active").classList.remove("is-active"), this.classList.add("is-active"), n.classList.add("is-active"), console.log('Tab: "' + e + '" toggled.')
-            })
-        }, s = 0; s < i.length; s++) n(s)
+        var e = i[t].dataset.tab,
+            n = document.querySelector(".tab--" + e),
+            s = void 0;
+        i[t].addEventListener("click", function() {
+            s = document.querySelectorAll(".data-strings__item span");
+            for (var a = 0; a < s.length; a++) s[a].classList.remove("is-active");
+            i[t].parentNode.querySelector(".tabs__item.is-active").classList.remove("is-active"), n.parentNode.querySelector(".tab.is-active").classList.remove("is-active"), this.classList.add("is-active"), n.classList.add("is-active"), console.log('Tab: "' + e + '" toggled.')
+        })
+    }, s = 0; s < i.length; s++) n(s)
 }]);
