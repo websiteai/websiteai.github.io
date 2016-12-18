@@ -1,5 +1,6 @@
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
+@font-face { font-family: Curse; src: url('fonts/curse.ttf'); }
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -144,6 +145,12 @@ fieldset {
     padding: .35em .625em .75em
 }
 
+.brand-name {
+    padding-left: 50px;
+    margin-top: -35px;
+    font-size: 30px;
+    font-family: Curse, sans-serif;
+}
 legend {
     box-sizing: border-box;
     color: inherit;
@@ -228,7 +235,7 @@ canvas {
 }
 
 .button--purple {
-    background: #4caf50
+    background: #009ddf
 }
 
 .button--purple:hover {
@@ -276,7 +283,7 @@ canvas {
 html {
     font-size: 20px;
     box-sizing: border-box;
-    background: #4caf50;
+    background: #009ddf;
     overflow-x: hidden
 }
 
@@ -305,7 +312,7 @@ a {
 body {
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 300;
-    background: #4caf50;
+    background: #009ddf;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden
@@ -1116,7 +1123,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .chat__item--user .chat__bubble {
-    background: #4caf50;
+    background: #009ddf;
     border-top-right-radius: 0;
     margin-left: auto
 }
@@ -1226,6 +1233,10 @@ ul {
     text-align: center;
     margin-top: -50px;
     padding-bottom: 60px;
+}
+.footer-brandtext {
+    font-family: Curse, sans-serif;
+    font-size: 25px;
 }
 .putspace {
     margin-top: 10px;
