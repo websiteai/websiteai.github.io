@@ -107,7 +107,7 @@
         }(),
         o = (i(1), function() {
             function t() {
-                n(this, t), this.canvas = document.querySelector(".js-animNLG"), this.container = this.canvas.parentNode, this.colors = ["#CCC2FD", "#AEC2FD", "#FFFFFF", "#CCC2FD", "#AEC2FD", "#FFFFFF"], this.stage = new createjs.Stage(this.canvas), this.points = null, this.positions = [], this.listItems = [], this.padding = window.innerWidth < 600 ? 20 : 30, this.composition = new createjs.Container, this.canvasProps = {
+                n(this, t), this.canvas = document.querySelector(".js-animNLG"), this.container = this.canvas.parentNode, this.colors = ["#d9fb3d", "#d9fb3d", "#d9fb3d", "#d9fb3d", "#d9fb3d", "#FFFFFF"], this.stage = new createjs.Stage(this.canvas), this.points = null, this.positions = [], this.listItems = [], this.padding = window.innerWidth < 600 ? 20 : 30, this.composition = new createjs.Container, this.canvasProps = {
                     width: this.container.offsetWidth,
                     height: this.container.offsetWidth,
                     center: this.container.offsetWidth / 2
