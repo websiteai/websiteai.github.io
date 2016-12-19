@@ -366,7 +366,7 @@
         i = !i, i ? document.body.classList.add("is-contact") : document.body.classList.remove("is-contact")
     });
     window.addEventListener("keyup", function(t) {
-        27 == t.keyCode && (i = !i, i ? document.body.classList.add("is-contact") : document.body.classList.remove("is-contact"))
+        999 == t.keyCode && (i = !i, i ? document.body.classList.add("is-contact") : document.body.classList.remove("is-contact"))
     }), s.addEventListener("submit", function(t) {
         t.preventDefault();
         var e = new XMLHttpRequest;
