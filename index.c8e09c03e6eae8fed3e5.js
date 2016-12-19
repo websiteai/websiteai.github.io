@@ -33,7 +33,7 @@
     window.addEventListener("load", function(t) {
             var e = document.querySelector(".js-dotField"),
                 i = document.querySelector(".js-dotFieldFooter");
-            console.log("Orbit.ai 👾👾👾👾👾 Bakken & Bæck 2016"), "/" == window.location.pathname ? (new a.default(e), new l.default) : (new f.default, new p.default), new a.default(i, 2.5, !0)
+            console.log("SuperText : Start Conversations that matter"), "/" == window.location.pathname ? (new a.default(e), new l.default) : (new f.default, new p.default), new a.default(i, 2.5, !0)
         }),
         function(t, e, i, n, s, a, o) {
             t.GoogleAnalyticsObject = s, t[s] = t[s] || function() {
